@@ -14,7 +14,7 @@ pnpm dev
 
 ```bash
     pm2 start pm2.json ; 启动pm2.json配置文件中的应用程序
-    pm2 start npm --name "next" -- run start PORT=3000
+    pm2 start npm --name "next" -- run start ; 启动npm run start命令
     pm2 stop app ; 停止应用程序
     pm2 restart app ; 重启应用程序
     pm2 delete app ; 删除应用程序
