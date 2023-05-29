@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { Button } from 'antd';
+
 const AboutStyle = () => {
   return (
     <style global jsx>{ `
@@ -5,8 +8,8 @@ const AboutStyle = () => {
         color: midnightblue;
       }
 
-      div {
-        background: orange;
+      body {
+        background: #f5f5f5;
       }
     ` }</style>
   )
@@ -17,6 +20,9 @@ function About () {
     <>
       <AboutStyle></AboutStyle>
       <div className="font-red">关于</div>
+      <Button>
+        <Link href="/">返回首页</Link>
+      </Button>
     </>
   )
 }
