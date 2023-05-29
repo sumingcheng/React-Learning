@@ -1,14 +1,17 @@
 import { Button } from 'antd'
-import Link from 'next/link'
-
+import { useRouter } from 'next/router'
 
 function HomePage () {
+  const router = useRouter()
+  
+  const handleClick = () => {
+    router.push('/about')
+  }
+  
   return (
     <>
       <div className="font1">首页</div>
-      <Button>
-        <Link href="/about">跳转到关于</Link>
-      </Button>
+      <Button onClick={handleClick}>跳转到关于</Button>
     </>
   )
 }

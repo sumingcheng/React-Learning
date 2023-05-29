@@ -1,19 +1,6 @@
 import Link from 'next/link';
 import { Button } from 'antd';
-
-const AboutStyle = () => {
-  return (
-    <style global jsx>{ `
-      .font-red {
-        color: midnightblue;
-      }
-
-      body {
-        background: #f5f5f5;
-      }
-    ` }</style>
-  )
-}
+import { AboutStyle } from '@/styles/globalStyled.jsx';
 
 function About () {
   return (
