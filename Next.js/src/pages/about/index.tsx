@@ -16,7 +16,7 @@ function About () {
   return (
     <>
       <AboutStyle></AboutStyle>
-      <div className="font-red">About</div>
+      <div className="font-red">关于</div>
     </>
   )
 }
