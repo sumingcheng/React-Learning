@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import { Button } from 'antd';
-import { AboutStyle } from '@/styles/globalStyled.jsx';
+import {Button} from 'antd';
+import {AboutStyle} from '@/styles/globalStyled.jsx';
 
-function About () {
+function About() {
   return (
-    <>
-      <AboutStyle></AboutStyle>
-      <div className="font-red">关于</div>
-      <Button>
-        <Link href="/">返回首页</Link>
-      </Button>
-    </>
+      <>
+        <AboutStyle></AboutStyle>
+        <div className="font-red">关于</div>
+        <Button>
+          <Link href="/">返回首页</Link>
+        </Button>
+      </>
   )
 }
 

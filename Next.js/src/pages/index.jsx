@@ -1,13 +1,13 @@
-import { Button } from 'antd'
-import { useRouter } from 'next/router'
+import {Button} from 'antd'
+import {useRouter} from 'next/router'
 
 function HomePage () {
   const router = useRouter()
-  
+
   const handleClick = () => {
     router.push('/about')
   }
-  
+
   return (
     <>
       <div className="font1">首页</div>
