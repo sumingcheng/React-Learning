@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {Button} from 'antd';
-import {AboutStyle} from '@/styles/globalStyled.jsx';
+import {AboutStyle} from '@/styles/PageStyled.jsx';
 
 function About() {
   return (

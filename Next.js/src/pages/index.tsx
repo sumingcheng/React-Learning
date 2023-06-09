@@ -1,7 +1,10 @@
 import {Button} from 'antd'
 import {useRouter} from 'next/router'
+import Layout from "@/layout";
 
-function HomePage () {
+
+
+function HomePage() {
   const router = useRouter()
 
   const handleClick = () => {
@@ -9,10 +12,9 @@ function HomePage () {
   }
 
   return (
-    <>
-      <div className="font1">首页</div>
-      <Button onClick={handleClick}>跳转到关于</Button>
-    </>
+      <>
+        <Layout></Layout>
+      </>
   )
 }
 
